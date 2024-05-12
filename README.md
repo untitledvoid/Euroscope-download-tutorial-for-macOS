@@ -7,8 +7,11 @@ A computer running macOS (version doesn't matter as long as the version of macOS
 
 ## **Software needed:**
 Xcode: Installed via the app store **OR** if you have an older version of macOS that doesn't support the latest Xcode version you can go [here](https://developer.apple.com/xcode/resources/), press "Additional tools" and find the latest Xcode your current macOS version supports (which you can do by just googling it);
+
 Xcode select: Xcode select **is needed** and the installation is through the terminal (as you'll see in the tutorial); 
+
 Homebrew: Open the terminal and copy/paste */bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"*
+
 Wineskin Winery: Open the terminal and copy/paste *brew install --cask --no-quarantine gcenx/wine/unofficial-wineskin*
 
 ## **Tutorial**
