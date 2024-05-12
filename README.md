@@ -16,12 +16,15 @@ Wineskin Winery: Open the terminal and copy/paste *brew install --cask --no-quar
 
 ## **Tutorial**
 
-1- Open the appstore, search for Xcode and install it (~10gb). You can also install it through apples developer portal depending on your version (refer to the software requirements section above).
-2- After Xcode has finished installing open the terminal and install Xcode select using *Xcode-select --install*
-3- Install Homebrew and Wineskin Winery (refer to the software requirements section above).
-4- Open Wineskin Winery and create an engine (selecy the latest version) 
+1- Open the appstore, search for Xcode and install it (~10gb). You can also install it through apples developer portal depending on your version (refer to the software requirements section above);
 
+2- After Xcode has finished installing open the terminal and install Xcode select using *Xcode-select --install*;
 
+3- Install Homebrew and Wineskin Winery (refer to the software requirements section above);
+
+4- Open Wineskin Winery and create an engine (selecy the latest version);
+
+5- 
 
 
 
