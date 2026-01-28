@@ -6,9 +6,6 @@ It can also be adapted for Linux with fewer requirements.
 ## Hardware Requirements
 
 - Computer running macOS or any Linux distro
-  - Any macOS version that supports:
-    - Wineskin Winery
-    - Track Audio and/or Vector Audio
 
 ## Software Requirements
 
@@ -83,6 +80,7 @@ winine
 
 - Installation may take a long time due to multiple .NET versions
 - Restart the wrapper if EuroScope does not launch on first attempt
+- Euroscope VCCS will not work with this setup due to software limitations
 
    
 
