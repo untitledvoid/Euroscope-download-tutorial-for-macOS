@@ -1,31 +1,88 @@
-# Euroscope-download-tutorial-for-macOS
+# EuroScope on macOS (via Sikarugir)
 
-With this tutorial you can get Euroscope up and running on a macOS computer. I've installed Euroscope with this tutorial on an i7 macbook pro and an i5 iMac both running macOS Monterey version 12.7.4 (in short, I didn't install them on a mac running a silicon chip so I have no idea if it works on those).
+This guide explains how to run EuroScope on macOS using Sikarugir (Wine-based).
+It can also be adapted for Linux with fewer requirements.
 
-## **Hardware needed:**
-A computer running macOS (version doesn't matter as long as the version of macOS supports wineskin winery, track audio and/or vector audio).
+## Hardware Requirements
 
-## **Software needed:**
-Xcode: Installed via the app store **OR** if you have an older version of macOS that doesn't support the latest Xcode version you can go [here](https://developer.apple.com/xcode/resources/), press "Additional tools" and find the latest Xcode your current macOS version supports (which you can do by just googling it);
+- Computer running macOS or any Linux distro
+  - Any macOS version that supports:
+    - Wineskin Winery
+    - Track Audio and/or Vector Audio
 
-Xcode select: Xcode select **is needed** and the installation is through the terminal (as you'll see in the tutorial); 
+## Software Requirements
 
-Homebrew: Open the terminal and copy/paste */bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"*
+### macOS only
+- Xcode  
+  - Install from the App Store  
+  - OR download a compatible version from:
+    https://developer.apple.com/xcode/resources/ (Additional Tools)
 
-Wineskin Winery: Open the terminal and copy/paste *brew install --cask --no-quarantine gcenx/wine/unofficial-wineskin*
+- Xcode Command Line Tools (xcode-select)
 
-## **Tutorial**
+### macOS & Linux
+- Homebrew
+- Sikarugir
+- EuroScope installer
 
-1- Open the appstore, search for Xcode and install it (~10gb). You can also install it through apples developer portal depending on your version (refer to the software requirements section above);
+> Linux users do NOT need Xcode or xcode-select
 
-2- After Xcode has finished installing open the terminal and install Xcode select using *Xcode-select --install*;
+## Installation
 
-3- Install Homebrew and Wineskin Winery (refer to the software requirements section above);
+### 1. Install Xcode (macOS only)
 
-4- Open Wineskin Winery and create an engine (selecy the latest version);
+Install Xcode from the App Store (≈10 GB)  
+Or download a compatible version from Apple Developer Resources if you have an older macOS version.
 
-5- 
+### 2. Install Xcode Command Line Tools (macOS only)
+
+Open Terminal and run:
+
+xcode-select --install
+
+### 3. Install Homebrew
+
+Paste the following into Terminal:
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+### 4. Install Sikarugir
+
+Run:
+
+brew upgrade
+brew install --cask Sikarugir-App/sikarugir/sikarugir
+
+### 5. Install EuroScope in Sikarugir
+
+1. Open Sikarugir
+2. Create a new engine (latest version available)
+3. Create a blank wrapper
+4. Open Winetricks for the wrapper
+5. Install the following packages:
+
+dotnet40  
+dotnet45  
+dotnet46  
+dotnet461  
+dotnet462  
+dotnet472  
+dotnet48  
+iertutil  
+msls31  
+msxml6  
+urlmon  
+vcrun2010  
+vcrun2022  
+winine  
+
+6. Run the EuroScope .msi installer inside the wrapper.
 
 
+## Notes
 
-VCCS NAO FUNCIONA
+- Installation may take a long time due to multiple .NET versions
+- Restart the wrapper if EuroScope does not launch on first attempt
+
+   
+
